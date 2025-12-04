@@ -1,5 +1,6 @@
 with open("docs/d2c1.txt") as f:
     inputFile = f.read()
+'''This one takes FOREVER to run!'''
 total = 0
 rangeNum = 0
 # make a list of the ranges and loop through
@@ -21,4 +22,4 @@ for testedRange in ranges:
         if invalid:
             total += testNum
 
-print(f"The sum of all invalid IDs was {total}.")
+print(f"The sum of all invalid IDs was {total:,}.")
