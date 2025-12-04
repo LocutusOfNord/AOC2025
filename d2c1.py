@@ -9,4 +9,4 @@ for r in ranges:
         if len(test)%2==0:
             if test[0:len(test)//2] == test[len(test)//2:]:
                 invalid += i
-print(f"The sum of all invalid IDs was {invalid}.")
+print(f"The sum of all the invalid IDs was {invalid}.")
