@@ -7,4 +7,4 @@ with open("docs/d3c1.txt") as f:
             ans += max(nums[:len(nums)-(i-1)])
             nums[:] = nums[nums.index(ans[-1])+1:]
         total += int(ans)
-print(f"The banks can generate maximum {total} jolts.",end="")
+print(f"The battery banks can generate maximum {total:,} jolts.")
