@@ -8,5 +8,4 @@ with open("docs/d1c1.txt") as f:
         counter = (counter+amount)%100
         if counter == 0:
             zcount += 1
-f.close()
 print("The arrow pointed at 0 " + str(zcount) + " times.")
