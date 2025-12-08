@@ -8,7 +8,7 @@ with open("docs/d7c1.txt") as f:
     for x,row in enumerate(grid):
         if x<len(grid)-1:
             for y,col in enumerate(row):
-                # if this is > 0, it is a particle
+                # if this is > 0, it contains particle timelines
                 if col > 0:
                     # if the spot below the particle is not a splitter
                     # add col more particles (timeline) to that space
