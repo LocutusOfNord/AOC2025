@@ -11,7 +11,7 @@ with open("docs/d7c1.txt") as f:
                 # if this is > 0, it is a particle
                 if col > 0:
                     # if the spot below the particle is not a splitter
-                    # add col more particle (timeline) to that space
+                    # add col more particles (timeline) to that space
                     if grid[x + 1][y] > -1:
                         grid[x + 1][y] += col
                     # if it IS a splitter, add col particles (timeline) to the
