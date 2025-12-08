@@ -21,8 +21,8 @@ with open("docs/d8c1.txt") as f:
                 abs(points[i][2] - points[last][2])**2
             )
 
-# sort the distances and organize the specified number of shortest
-# ones into sets of links
+# sort the distances and link them, from closest to furthest,
+# into circuits
 sorted_distances = sorted(distances, key=distances.get)
 for i in range(len(distances)):
     a_index,b_index = sorted_distances[i][0], sorted_distances[i][1]
@@ -48,7 +48,7 @@ for i in range(len(distances)):
     #neither found
     else:
         circuits.append({a_index, b_index})
-    # if points in different set, or neither one found,
+    # if points in different sets, or neither one found,
     # and they therefore need to be linked, multiply x coords
     if set_with_a != set_with_b or set_with_a + set_with_b == -2:
         ans = points[a_index][0]*points[b_index][0]
