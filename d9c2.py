@@ -66,6 +66,6 @@ for i in range(len(shape_points)-1):
         if area > biggest_area:
             if not check_collision(corners):
                 biggest_area = area
-print(biggest_area)
+print(f"The biggest area from a valid rectangle was {biggest_area:,}.")
 t1 = time.time()
 print(f"Ran in {(t1-t0)*1000:,.2f} ms.")
